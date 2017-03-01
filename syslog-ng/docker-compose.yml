@@ -1,0 +1,8 @@
+version: "3"
+services:
+  syslog-ng:
+    image: balabit/syslog-ng
+    ports:
+      - 514:514/udp
+    volumes:
+      - ./log:/var/log:rw
